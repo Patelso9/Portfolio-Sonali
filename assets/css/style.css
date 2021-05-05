@@ -1,43 +1,88 @@
 :root {
-    --background: rgb(105, 131, 133);
-    --h1: pink;
-    --h2: rgb(184, 139, 146);
-    --p: darkblue;
+    --background: black;
+    --h1: white;
+    --h2: rgb(197, 106, 119);
+    --p: rgb(130, 90, 182);
     --box: rgb(105, 13, 28);
 }
 
-::selection{
+html{
     background-color: var(--background);
-    color: var(--box)
+    box-sizing: border-box;
 }
 
-html{}
+/* Header + Nav bar */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box);
+}
 
+    .header ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .header nav ul a{
+        display: inline-block;
+        justify-content: flex-end;
+        color: var(--background);
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        text-decoration: none;
+    }
+ /* body general */
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     color: var(--h1);
+    padding-left: 10px;
 }
 
 h2 {
     color: var(--h2);
+    text-align: left;
+    padding-left: 40px;
+    align-self: flex-start;
+    padding-bottom: 5px;
 }
 
-p
-ul {
+.about {
     color: var(--p);
-    background-color: var(-box);
 }
+
+    #imgtext {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .about p {
+        margin: 25px auto;
+    }
+
+    .about img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 30%;
+        float: left;
+        margin: 10px;
+    }
+
+.contact a {
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
   }
   
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-    header {
-      width: 75%;
-    }
-  }
+  
