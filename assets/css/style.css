@@ -2,6 +2,7 @@
     --background: black;
     --h1: white;
     --h2: rgb(197, 106, 119);
+    --nav: lightpink;
     --p: rgb(130, 90, 182);
     --box: rgb(105, 13, 28);
 }
@@ -28,7 +29,7 @@ html{
     .header nav ul a{
         display: inline-block;
         justify-content: flex-end;
-        color: var(--background);
+        color: var(--nav);
         padding-top: 15px;
         margin-right: 20px;
         float: right;
@@ -49,10 +50,9 @@ h2 {
     text-align: left;
     padding-left: 40px;
     align-self: flex-start;
-    padding-bottom: 5px;
 }
 
-.about {
+p{
     color: var(--p);
 }
 
@@ -61,10 +61,6 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: left;
-    }
-
-    .about p {
-        margin: 25px auto;
     }
 
     .about img{
@@ -79,6 +75,8 @@ h2 {
 .contact a {
     text-decoration: none;
 }
+
+
 
 
 @media screen and (min-width: 768px) {
