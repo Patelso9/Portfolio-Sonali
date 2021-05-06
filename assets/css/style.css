@@ -97,11 +97,15 @@ footer{
   }
 
   .portfolio div{
-    opacity: .75;
+    opacity: .60;
   }
     
   .portfolio img{
       width: 100%;
+  }
+
+  .portfolio a{
+    text-decoration: none;
   }
 /* contact info */
 .contact a {
