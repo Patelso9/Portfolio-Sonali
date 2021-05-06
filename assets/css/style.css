@@ -3,46 +3,20 @@
     --h1: white;
     --h2: rgb(197, 106, 119);
     --nav: lightpink;
-    --p: rgb(130, 90, 182);
+    --p: rgb(153, 85, 119);
     --box: rgb(105, 13, 28);
-    --gray: rgb(133, 121, 128);
+    --gray: rgb(133, 121, 128, 0.2);
+    --text: Arial, Helvetica, sans-serif;
 }
 
 html{
     background-color: var(--background);
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
 
-/* Header + Nav bar */
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--box);
-}
-
-    .header ul {
-    }
-
-    .header nav ul a{
-        display: inline-block;
-        justify-content: flex-end;
-        color: var(--nav);
-        padding-top: 15px;
-        margin-right: 20px;
-        float: right;
-        text-decoration: none;
-    }
- /* body general */
+/* body general */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--text);
 }
 
 h1 {
@@ -57,9 +31,15 @@ h2 {
     align-self: flex-start;
 }
 
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
 p{
     color: var(--p);
-    text-align: center;
 }
 
 footer{
@@ -68,13 +48,34 @@ footer{
     text-align: center;
 }
 
+/* Header + Nav bar */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box);
+}
+
+    .header nav ul a{
+        display: inline-block;
+        justify-content: flex-end;
+        color: var(--nav);
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        text-decoration: none;
+    }
+/* targeting class & id */
+/* About me */
     #imgtext {
         margin-top: 15px;
         display: flex;
         align-items: center;
         justify-content: left;
+        background-color: var(--gray);
     }
-
+    
     .about img{
         border: 1px solid #ddd;
         border-radius: 4px;
@@ -83,32 +84,51 @@ footer{
         float: left;
         margin: 10px;
     }
+    
+/* portfolio */
+    .portfolio div{
+        opacity: 0.5;
+    }
+    
+    .card{
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: var(--border-radius);
+        padding: 10px;
+        flex: 0 0 300px;
+        margin: 20px; 
+    }
+    
+        .card > p {
+            text-align: center;
+        }
+      
+      .card > img {
+        width: 100%;
+      }
 
+/* contact info */
 .contact a {
     text-decoration: none;
     color: var(--p)
 }
 
-
-.portfolio div{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: var(--gray);
-    opacity: 0.5;
-}
-
+/* hover */
 .portfolio div:hover{
     opacity: 1;
 }
 
 .contact a:hover{
     color: var(--h1)
-    
+
 }
 
+/* media queries */
+
 @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-  }
+
+
+}
   
   
