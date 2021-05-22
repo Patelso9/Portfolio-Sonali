@@ -39,7 +39,8 @@ ul{
     align-items: baseline;
 }
 
-p{
+p,
+h4{
     color: var(--p);
 }
 
@@ -91,7 +92,7 @@ footer{
   } 
   
   /* Create three equal columns that sits next to each other */
-#card{
+.card{
     flex: 30%;
     padding: 5px;
   }
