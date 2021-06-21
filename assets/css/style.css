@@ -9,12 +9,12 @@
 }
 
 html{
-    background-color: var(--background);
     box-sizing: border-box;
 }
 
 /* body general */
 body{
+    background-color: var(--background);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
