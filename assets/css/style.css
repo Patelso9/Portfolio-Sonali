@@ -6,6 +6,7 @@
     --p: rgb(153, 85, 119);
     --box: rgb(105, 13, 28);
     --gray: rgb(133, 121, 128, 0.2);
+    --card: rgba(224, 178, 186, 0.349);
 }
 
 html{
@@ -71,6 +72,7 @@ footer{
 /* About me */
 #imgtext {
     margin-top: 15px;
+    padding-right: 30px;
     display: flex;
     align-items: center;
     background-color: var(--gray);
@@ -87,14 +89,13 @@ footer{
 /* portfolio */
 .portfolio{
     display: flex;
-    flex-wrap: wrap;
     text-align: center;
   } 
   
   /* Create three equal columns that sits next to each other */
 .card{
-    flex: 30%;
     padding: 5px;
+    background-color: var(--card);
   }
 
   .portfolio div{
@@ -145,8 +146,13 @@ footer{
           width: 100%;
       }
 
+      #portfolio{
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+
       #card{
-        flex: 100%;
+          width: 100%;
       }
     
       .contact ul{
