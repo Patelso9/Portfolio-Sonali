@@ -1,17 +1,20 @@
 /* About me */
-#imgtext {
-    margin-top: 15px;
-    padding-right: 30px;
+
+#me-img{
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+#imgtext{
     display: flex;
     align-items: center;
-    background-color: var(--gray);
 }
 
-.about img{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 30%;
-    padding: 10px;
-    margin: 20px;
+.skill-name{
+   display: inline-block; 
+   color: var(--p);
+   font-weight: bold;
 }
-

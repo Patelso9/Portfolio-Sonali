@@ -8,7 +8,7 @@
 
 .header nav ul a{
     justify-content: flex-end;
-    color: var(--nav);
+    color: var(--slate);
     padding-top: 15px;
     margin-right: 20px;
     float: right;

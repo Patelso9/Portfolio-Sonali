@@ -1,10 +1,11 @@
 :root {
     --background: black;
     --h1: white;
-    --h2: rgb(197, 106, 119);
+    --h2: rgb(173, 91, 109);
     --nav: lightpink;
     --p: rgb(153, 85, 119);
     --box: rgb(105, 13, 28);
+    --slate: slategray;
     --gray: rgb(133, 121, 128, 0.2);
     --card: rgba(224, 178, 186, 0.349);
 }
@@ -29,8 +30,10 @@ h2 {
     color: var(--h2);
     text-align: left;
     padding-left: 40px;
+    padding: 20px;
     align-self: flex-start;
-    padding-top: 30px;
+    margin-top: 30px;
+    background-color: var(--gray);
 }
 
 ul{
@@ -38,15 +41,17 @@ ul{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+    color: var(--slate);
 }
 
 ol{
-    color: slategray;
+    color: var(--slate);
 }
 
-p,
-h4{
+h4,
+h6{
     color: var(--p);
+    margin: 10px;
 }
 
 footer{
@@ -54,4 +59,5 @@ footer{
     color: var(--nav);
     text-align: center;
 }
+
 
