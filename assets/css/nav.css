@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box);
+}
+
+.header nav ul a{
+    justify-content: flex-end;
+    color: var(--nav);
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    text-decoration: none;
+}

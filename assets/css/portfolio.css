@@ -1,0 +1,42 @@
+/* portfolio */
+.portfolio{
+    display: flex;
+    text-align: center;
+  } 
+  
+  /* Create three equal columns that sits next to each other */
+.card{
+    padding: 5px;
+    background-color: var(--card);
+  }
+
+  .portfolio div{
+    opacity: .60;
+  }
+    
+  .portfolio img{
+      width: 100%;
+  }
+
+  .portfolio a{
+    text-decoration: none;
+  }
+/* contact info */
+.contact a {
+    text-decoration: none;
+    color: var(--p)
+}
+    
+    /* hover */
+.portfolio div:hover{
+    opacity: 1;
+}
+
+.contact a:hover{
+    color: var(--h1)
+}
+
+.header a:hover{
+    color: var(--h1);
+    background-color: var(--gray);
+}

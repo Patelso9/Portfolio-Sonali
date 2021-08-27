@@ -40,6 +40,10 @@ ul{
     align-items: baseline;
 }
 
+ol{
+    color: slategray;
+}
+
 p,
 h4{
     color: var(--p);
@@ -51,117 +55,3 @@ footer{
     text-align: center;
 }
 
-/* Header + Nav bar */
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--box);
-}
-
-.header nav ul a{
-    justify-content: flex-end;
-    color: var(--nav);
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    text-decoration: none;
-}
-/* targeting class & id */
-/* About me */
-#imgtext {
-    margin-top: 15px;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    background-color: var(--gray);
-}
-
-.about img{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 30%;
-    padding: 10px;
-    margin: 20px;
-}
-
-/* portfolio */
-.portfolio{
-    display: flex;
-    text-align: center;
-  } 
-  
-  /* Create three equal columns that sits next to each other */
-.card{
-    padding: 5px;
-    background-color: var(--card);
-  }
-
-  .portfolio div{
-    opacity: .60;
-  }
-    
-  .portfolio img{
-      width: 100%;
-  }
-
-  .portfolio a{
-    text-decoration: none;
-  }
-/* contact info */
-.contact a {
-    text-decoration: none;
-    color: var(--p)
-}
-    
-    /* hover */
-.portfolio div:hover{
-    opacity: 1;
-}
-
-.contact a:hover{
-    color: var(--h1)
-}
-
-.header a:hover{
-    color: var(--h1);
-    background-color: var(--gray);
-}
-
-/* media queries */
-
-@media screen and (max-width: 768px) {
-    .header 
-    {
-       flex-direction: column;
-      }
-
-      #imgtext{
-          display: block;
-          padding: 15px;
-      }
-
-      .about img{
-          width: 100%;
-      }
-
-      #portfolio{
-        display: flex;
-        flex-wrap: wrap-reverse;
-      }
-
-      #card{
-          width: 100%;
-      }
-    
-      .contact ul{
-          flex-direction: column;
-          background-color: var(--gray);
-        } 
-        
-        .contact ul li{
-            margin: 15px;
-         }
-}
-  
