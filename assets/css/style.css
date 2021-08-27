@@ -32,7 +32,7 @@ h2 {
     padding-left: 40px;
     padding: 20px;
     align-self: flex-start;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: var(--gray);
 }
 
@@ -60,4 +60,68 @@ footer{
     text-align: center;
 }
 
+/* ABOUT ME */
 
+.me-img{
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    width: 30%;
+    float: left;
+    /* margin-right: 30px; */
+}
+
+.imgtext{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.summary{
+    font-size: 115%;
+}
+
+.skill-name{
+   display: inline-block; 
+   color: var(--p);
+   font-weight: bold;
+   font-size: 110%;
+}
+
+
+
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .header 
+    {
+       flex-direction: column;
+      }
+
+      .imgtext{
+          display: flex;
+          padding: 15px;
+          flex-wrap: wrap;
+      }
+
+      .me-img{
+          width: 70%;
+          margin: auto;
+      }
+
+
+
+      #card{
+          width: 100%;
+      }
+    
+      .contact ul{
+          flex-direction: column;
+          /* background-color: var(--gray); */
+        } 
+        
+        .contact ul li{
+            margin: 15px;
+            font-size: 125%;
+         }
+}
+  

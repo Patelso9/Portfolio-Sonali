@@ -1,20 +1,2 @@
-/* About me */
 
-#me-img{
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    width: 30%;
-    float: left;
-    margin-right: 30px;
-}
 
-#imgtext{
-    display: flex;
-    align-items: center;
-}
-
-.skill-name{
-   display: inline-block; 
-   color: var(--p);
-   font-weight: bold;
-}
