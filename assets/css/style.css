@@ -5,9 +5,12 @@
     --nav: lightpink;
     --p: rgb(153, 85, 119);
     --box: rgb(105, 13, 28);
-    --slate: slategray;
+    --slate: rgba(112, 128, 144, 0.836);
     --gray: rgb(133, 121, 128, 0.2);
     --card: rgba(224, 178, 186, 0.349);
+    --handwriting: 'Architects Daughter', cursive;
+    --tilted: 'Courgette', cursive;
+    --name: 'Dancing Script', cursive;
 }
 
 html{
@@ -17,7 +20,7 @@ html{
 /* body general */
 body{
     background-color: var(--background);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 h1 {
@@ -25,6 +28,7 @@ h1 {
     font-size: 60px;
     padding-left: 10px;
     margin: 20px;
+    font-family: var(--name);
 }
 
 h2 {
@@ -35,6 +39,7 @@ h2 {
     align-self: flex-start;
     /* margin-top: 30px; */
     background-color: var(--gray);
+    font-family: var(--handwriting);
 }
 
 ul{
@@ -44,10 +49,13 @@ ul{
     align-items: center;
     color: var(--slate);
     font-size: 110%;
+    font-family: var(--tilted);
+
 }
 
 ol{
     color: var(--slate);
+    margin-right: 10px;
 }
 
 h4,
@@ -60,6 +68,7 @@ footer{
     margin-top: 50px;
     color: var(--slate);
     text-align: center;
+    font-family: var(--name);
 }
 
 /* ABOUT ME */
@@ -87,6 +96,8 @@ footer{
    color: var(--p);
    font-weight: bold;
    font-size: 110%;
+   font-family: var(--tilted);
+
 }
 
 
@@ -118,6 +129,7 @@ footer{
     
       .contact ul{
           flex-direction: column;
+          text-align: center;
           /* background-color: var(--gray); */
         } 
         
