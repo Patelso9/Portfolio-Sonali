@@ -22,6 +22,7 @@ body{
 
 h1 {
     color: var(--h1);
+    font-size: 60px;
     padding-left: 10px;
     margin: 20px;
 }
@@ -40,8 +41,9 @@ ul{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
     color: var(--slate);
+    font-size: 110%;
 }
 
 ol{
@@ -56,7 +58,7 @@ h6{
 
 footer{
     margin-top: 50px;
-    color: var(--nav);
+    color: var(--slate);
     text-align: center;
 }
 
@@ -121,7 +123,6 @@ footer{
         
         .contact ul li{
             margin: 15px;
-            font-size: 125%;
          }
 }
   
