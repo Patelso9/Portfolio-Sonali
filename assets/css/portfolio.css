@@ -1,4 +1,4 @@
-/* portfolio */
+portfolio
 .portfolio{
     display: flex;
     text-align: center;
@@ -15,17 +15,13 @@
   }
     
   .portfolio img{
-      width: 100%;
+      width: 30%;
   }
 
   .portfolio a{
     text-decoration: none;
   }
-/* contact info */
-.contact a {
-    text-decoration: none;
-    color: var(--p)
-}
+
     
     /* hover */
 .portfolio div:hover{
