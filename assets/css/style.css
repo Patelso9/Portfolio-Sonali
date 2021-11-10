@@ -100,11 +100,23 @@ footer{
 
 }
 
-/* contact info */
+/* PORTFOLIO */
+.card{
+    padding: 5px;
+    background-color: var(--card);
+  }
+
+  .portfolio img{
+    opacity: .60; 
+    width: 30%;
+  }
+
+
+/* CONTACT INFO*/
 .contact a {
     text-decoration: none;
-    color: var(--p)
-}
+    color: var(--p);
+};
 
 
 /* Mobile View */
