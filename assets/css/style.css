@@ -13,9 +13,17 @@
     --name: 'Dancing Script', cursive;
 }
 
+[class*="col-"] {
+    float: left;
+    padding: 2px;
+  }
+
 html{
     box-sizing: border-box;
 }
+
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
 
 /* body general */
 body{
@@ -71,15 +79,26 @@ footer{
     font-family: var(--name);
 }
 
-/* ABOUT ME */
-
-.me-img{
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    width: 30%;
-    float: left;
-    /* margin-right: 30px; */
+/* NAV BAR */
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--box);
 }
+
+.header nav ul a{
+    justify-content: flex-end;
+    color: var(--slate);
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    text-decoration: none;
+}
+
+/* ABOUT ME */
 
 .imgtext{
     display: flex;
@@ -87,9 +106,19 @@ footer{
     padding: 10px;
 }
 
+.me-img{
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    width: 100%;
+    /* float: left; */
+    margin-right: 30px;
+} 
+
 .summary{
     font-size: 115%;
 }
+
+/* SKILLS */
 
 .skill-name{
    display: inline-block; 
@@ -111,6 +140,44 @@ footer{
     width: 30%;
   }
 
+  .portfolio{
+    display: flex;
+    text-align: center;
+  } 
+  
+  /* Create three equal columns that sits next to each other */
+.card{
+    padding: 5px;
+    background-color: var(--card);
+  }
+
+  .portfolio div{
+    opacity: .60;
+  }
+    
+  .portfolio img{
+      width: 30%;
+  }
+
+  .portfolio a{
+    text-decoration: none;
+  }
+
+    
+    /* hover */
+        .portfolio div:hover{
+            opacity: 1;
+        }
+
+        .contact a:hover{
+            color: var(--h1)
+        }
+
+        .header a:hover{
+            color: var(--h1);
+            background-color: var(--gray);
+        }
+
 
 /* CONTACT INFO*/
 .contact a {
@@ -120,25 +187,15 @@ footer{
 
 
 /* Mobile View */
-@media screen and (max-width: 768px) {
-    .header 
-    {
-       flex-direction: column;
-      }
+@media only screen and (max-width: 768px) {
+    
+    
+    .header{
+    /* display: block; */
+    flex-direction: column;
+    }
 
-      .imgtext{
-          display: flex;
-          padding: 15px;
-          flex-wrap: wrap;
-      }
-
-      .me-img{
-          width: 70%;
-          margin: auto;
-      }
-
-
-
+   
       #card{
           width: 100%;
       }
