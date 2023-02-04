@@ -130,18 +130,13 @@ footer{
 
 /* PORTFOLIO */
 
+/* Create three equal columns that sits next to each other */
   .container{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    /* align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: row; */
     text-align: center;
-    border: white dash;
   } 
   
-  /* Create three equal columns that sits next to each other */
 .card{
     /* width: 30%; */
     padding: 5px;
