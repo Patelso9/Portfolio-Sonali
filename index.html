@@ -27,9 +27,12 @@
 </head>
 <body>
     <header class="header">
+    <div class="sonali">
+        <img class="me-img" src="assets/images/me-lean.JPG" alt="Picture of me"/>
         <h1>Sonali Patel</h1>
+    </div>
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="./assets/images/Resume_Sonali Patel.pdf" download>Resume</a></li>
@@ -40,11 +43,10 @@
 
     <!-- About Me -->
     <section class="about">
-        <h2>About Me</h2> 
         <div class="row">
-        <div class="imgtext">
+            <div class="imgtext">
             <div class="col-3">
-                <img class="me-img" src="assets/images/me-lean.JPG" alt="Picture of me"/>
+                <h2>About Me</h2> 
             </div>
             <div class="col-9">
                 <h6 class="summary">Front end web developer leveraging background in packaging sciences and project management to provide a unique perspective on how end-users interact with websites and software platforms. 
@@ -59,6 +61,7 @@
     </section>
  
  <!-- Skills -->
+ <section class="skills">
  <h2>Skills</h2>
     <ol>
         <li> <div class="skill-name">JavaScript</div> 
@@ -77,49 +80,20 @@
             : Has made life much more simple as a fullstack developer. JQuery has helped cut down the amount of code I write wihle using JavaScript
         </li>
     </ol>
+ </section>
 
     <!-- Portfolio -->
-    <h2 id="portfolio">Portfolio</h2>
-    <section class="portfolio container">
-        <!-- <div class="projects"> -->
-            <article class="card card1">
-                <a href="https://patelso9.github.io/FicksnLiqs/">
-                    <img src="./assets/images/projects/flicksnliqs.JPEG" alt="Group Project 1">
-                    <h4>Flicks&Liqs</h4>
-                    <p>Deployed: https://patelso9.github.io/FicksnLiqs/</p>
-                </a>
-                <p>Respository: https://github.com/Patelso9/FicksnLiqs</p>
-                <p>Random cocktail and movie generator, phase 1 of the application. </p>
-            </article>
-            <article class="card card 2">
-                <a href="https://flicks-and-liqs.herokuapp.com/">
-                    <img src="./assets/images/projects/flicks-and-liqs.png" alt="Group Project 3">
-                    <h4>Flicks-and-Liqs</h4>
-                    <p>Deployed: https://flicks-and-liqs.herokuapp.com/</p>
-                </a>
-                    <p>Respository: https://github.com/Patelso9/Flicks-and-Liqs</p>
-                    <p>Final group project, deployed on Heroku. Designed to promote mental welness through a simulation of drink and cocktail with the ability to make a saved list of movies and cocktails</p>
-            </article>
-            <article class="card card3">
-                <a href="https://portfolio-patelso9.herokuapp.com/">
-                <img src="./assets/images/projects/React-port.png" alt="Portfolio created using ReactJS" >
-                <h4>ReactJS portfolio</h4>
-                <p>Deployed: https://portfolio-patelso9.herokuapp.com/ </p>
-            </a>
-                <p>Repository: https://github.com/Patelso9/portfolio-react</p>
-                <p>Created to demonstrate my ability to use ReactJS</p>
-            </article>
-        <!-- </div> -->
-    </section>
+    <!-- <h2 id="portfolio">Portfolio</h2> -->
+    
 
     <!-- Contact Me -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <ul>
+        <ul class="contact-list">
             <li><a href= "https://www.linkedin.com/in/sonali-patel-79a0a7a0">LinkedIn</a></li>
             <li><a href= "https://github.com/Patelso9">GitHub</a></li>
-            <li><a href= "mailto:sonali.patel.pkg@gmail.com">Email:</br> sonali.patel.pkg@gmail.com</a></li>
-            <li><a href="tel:7349451368"> Phone: </br> 734-945-1368</a></li>
+            <li>Email: <a href= "mailto:sonali.patel.pkg@gmail.com">sonali.patel.pkg@gmail.com</a></li>
+            <li>Phone: <a href="tel:7349451368">734-945-1368</a></li>
         </ul>
     </section>
 
@@ -133,3 +107,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>    
 </body>
 </html>
+
+
+
