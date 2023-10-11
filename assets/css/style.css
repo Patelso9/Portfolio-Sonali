@@ -1,13 +1,11 @@
 :root {
-    --background: black;
+    --background: rgb(14, 72, 73);
     --h1: white;
-    --h2: rgb(173, 91, 109);
-    --nav: lightpink;
-    --p: rgb(153, 85, 119);
-    --box: rgb(105, 13, 28);
-    --slate: rgb(109, 80, 80);
-    --gray: rgb(133, 121, 128, 0.2);
-    --card: rgba(224, 178, 186, 0.349);
+    --h2: rgb(152, 176, 176);
+    --nav: rgb(105, 97, 69);
+    --p: rgb(0, 0, 0);
+    --box: rgba(3, 3, 3, 0.501);
+    --slate: rgb(152, 176, 176);
     --handwriting: 'Architects Daughter', cursive;
     --tilted: 'Courgette', cursive;
     --name: 'Dancing Script', cursive;
@@ -22,12 +20,19 @@ html{
     box-sizing: border-box;
 }
 
-.col-3 {width: 25%;}
-.col-9 {width: 75%;}
+.col-3 {
+    width: 25%;
+    /* padding: 10px; */
+}
+.col-9 {
+    width: 75%;
+    /* padding: 10px; */
+}
 
 /* body general */
 body{
     background-color: var(--background);
+     color: gray;
     font-family: 'Catamaran', sans-serif;
 }
 
@@ -45,24 +50,19 @@ h2 {
     padding-left: 40px;
     padding: 20px;
     align-self: flex-start;
-    /* margin-top: 30px; */
-    background-color: var(--gray);
     font-family: var(--handwriting);
 }
 
-ul{
+.nav-bar{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--slate);
     font-size: 110%;
     font-family: var(--tilted);
-
 }
 
 ol{
-    color: var(--slate);
     margin-right: 10px;
 }
 
@@ -77,6 +77,12 @@ footer{
     color: var(--slate);
     text-align: center;
     font-family: var(--name);
+}
+
+section{
+    background-color: rgb(3, 3, 3, .2);
+    margin: 20px;
+    padding: 20px;
 }
 
 /* NAV BAR */
@@ -100,22 +106,21 @@ footer{
 
 /* ABOUT ME */
 
-.imgtext{
+.sonali{
     display: flex;
-    align-items: center;
-    padding: 10px;
+    /* align-self: flex-start; */
 }
 
 .me-img{
     border: 1px solid #ddd;
-    border-radius: 100%;
-    width: 100%;
-    /* float: left; */
-    margin-right: 30px;
+    border-radius: 20%;
+    width: 80px;
+    /* height: 0px; */
+    margin: 15px;
 } 
 
 .summary{
-    font-size: 115%;
+    font-size: 105%;
 }
 
 /* SKILLS */
@@ -175,8 +180,12 @@ footer{
 /* CONTACT INFO*/
 .contact a {
     text-decoration: none;
-    color: var(--p);
+    color: var(--nav);
 };
+
+.contact-list{
+    list-style-type: s;
+}
 
 
 /* Mobile View */
@@ -196,7 +205,6 @@ footer{
       .contact ul{
           flex-direction: column;
           text-align: center;
-          /* background-color: var(--gray); */
         } 
         
         .contact ul li{
