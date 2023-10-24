@@ -1,9 +1,9 @@
 :root {
     --background: rgb(14, 72, 73);
     --h1: white;
-    --h2: rgb(152, 176, 176);
-    --nav: rgb(105, 97, 69);
-    --p: rgb(0, 0, 0);
+    --h2: rgb(210, 222, 222);
+    --nav: rgb(174, 195, 194);
+    --p: rgb(159, 160, 155);
     --box: rgba(3, 3, 3, 0.501);
     --slate: rgb(152, 176, 176);
     --handwriting: 'Architects Daughter', cursive;
@@ -21,13 +21,10 @@ html{
 }
 
 .col-3 {
-    width: 25%;
-    /* padding: 10px; */
+    text-align: center;
 }
-.col-9 {
-    width: 75%;
-    /* padding: 10px; */
-}
+/* .col-9 {
+/* } 
 
 /* body general */
 body{
@@ -54,22 +51,31 @@ h2 {
 }
 
 .nav-bar{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     font-size: 110%;
     font-family: var(--tilted);
 }
 
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
 ol{
     margin-right: 10px;
+    list-style-type: none;
+
 }
 
 h4,
 h6{
     color: var(--p);
     margin: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    word-spacing: 1px;
 }
 
 footer{
@@ -80,9 +86,11 @@ footer{
 }
 
 section{
-    background-color: rgb(3, 3, 3, .2);
+    background-color: rgba(18, 18, 18, 0.255);
     margin: 20px;
     padding: 20px;
+    border-radius: 20px;
+
 }
 
 /* NAV BAR */
@@ -101,7 +109,6 @@ section{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    text-decoration: none;
 }
 
 /* ABOUT ME */
@@ -164,7 +171,7 @@ section{
     
     /* hover */
         .portfolio div:hover{
-            opacity: 1;
+            opacity: .8;
         }
 
         .contact a:hover{
@@ -183,9 +190,6 @@ section{
     color: var(--nav);
 };
 
-.contact-list{
-    list-style-type: s;
-}
 
 
 /* Mobile View */
