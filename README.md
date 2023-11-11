@@ -1,11 +1,10 @@
 # Portfolio-Sonali
 
-Welcome to my portfolio! This is the homepage of all my software development work.  
+Welcome to my portfolio! 
 
 ## Description
 
-Created as our 1st project in the Rutgers software development bootcamp, this portfolio will serve as the main repositpry for all my major projects. 
-Projects currently referenced in the portfolio are out dated abd used to fill space. 
+This is the homepage of all my software development work.  
 
 ## Links
 
