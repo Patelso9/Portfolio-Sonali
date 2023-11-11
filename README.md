@@ -4,7 +4,8 @@ Welcome to my portfolio!
 
 ## Description
 
-This page serves as the homepage for my resume and all my professional project.
+Created as our 1st project in the Rutgers software development bootcamp, this portfolio will serve as the main repositpry for all my major projects. 
+Projects currently referenced in the portfolio are out dated abd used to fill space. 
 
 ## Links
 
